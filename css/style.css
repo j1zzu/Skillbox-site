@@ -1,0 +1,273 @@
+@font-face {
+  font-family: 'Graphik LCG';
+  src: url('../fonts/GraphikLCG-Medium.woff2') format('woff2'),
+    url('../fonts/GraphikLCG-Medium.woff') format('woff');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+    url('../fonts/Gilroy-Regular.woff') format('woff');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Gilroy-ExtraBold.woff') format('woff');
+  font-display: swap;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+    url('../fonts/Gilroy-Medium.woff') format('woff');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Gilroy', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  padding-left: 200px;
+  margin-bottom: 20px;
+}
+
+/*program.html и index.html*/
+.table {
+  margin-top: 100px;
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+.table th {
+  border: 1px solid #000;
+  padding: 5px;
+}
+.table td {
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+.table-footer {
+  text-align: center;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222020;
+}
+
+.main-header {
+    color: white;
+    font-family: 'Graphik LCG', sans-serif;
+    margin-bottom: 30px;
+}
+
+.course-download {
+  padding: 20px;
+  color: white;
+  background-color: #2f1ce4;
+  border: 3px solid #2f1ce4;
+}
+
+.link-more {
+  padding: 20px;
+  color: white;
+  background-color: transparent;
+  border: 3px solid white;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.link-back {
+  padding-left: 25px;
+  background-image: url(../img/return.png);
+  background-position: left center;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+
+.first-header {
+  margin-top: 100px;
+  padding-left: 100px;
+  font-size: 48px;
+  color: #222020;
+}
+
+.third-header {
+  padding-left: 180px;
+  font-size: 36px;
+  color:#2f1ce4;
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+
+.lists {
+  padding-left: 200px;
+  font-size: 18px;
+}
+
+.image-caption {
+  padding-left: 200px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.link-course {
+  color: #2f1ce4;
+  font-size: 24px;
+  font-family: 'Gilroy', sans-serif;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/*Modules.html*/
+.main-module {
+  width: 1180px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container-header {
+  padding-left: 25px;
+}
+
+.container-module {
+  width: 1180px;
+  margin: 0 auto;
+  padding-left: 80px;
+}
+
+.modules-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.child {
+  display: inline-block;
+  width: 500px;
+  min-height: 500px;
+  margin-right: 60px;
+  margin-bottom: 60px;
+  vertical-align: middle;
+  position: relative;
+  box-shadow: -5px 5px 3px 0px #e8e8e8;
+}
+
+.number {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 40px;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  opacity: 0.1;
+}
+
+.right-block {
+  margin-right: 0;
+}
+
+.header-list {
+  font-size: 30px;
+  padding-left: 40px;
+  color: #2f1ce4;
+}
+
+.list-block li:not(:last-child){
+  margin-bottom: 20px;
+}
+
+.list-block  li {
+  list-style-type: none;
+  font-size: 16px;
+}
+
+.back-img {
+  background-image: url(../img/1.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+
+.list-block {
+  padding-top: 200px;
+}
+
+.back-img2 {
+  background-image: url(../img/2.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+
+.back-img3 {
+  background-image: url(../img/3.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+
+.back-img4 {
+  background-image: url(../img/4.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+.btn-center {
+  text-align: center;
+  margin-right: 30px;
+}
+
+.btn-center button {
+  padding: 20px 48px;
+  background-color:white;
+  border: 3px solid #2f1ce4;
+  color: #2f1ce4;
+  font-size: 14px;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  border-radius: 2px;
+}
+
+.body-img {
+  background-image: url(../img/волна.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  padding-bottom: 650px;
+
+}
