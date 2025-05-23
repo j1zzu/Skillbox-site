@@ -1,0 +1,11 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install HTMLHint
+        run: npm install -g htmlhint
+      - name: Lint HTML
+        run: htmlhint *.html
