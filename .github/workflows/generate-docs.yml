@@ -1,0 +1,32 @@
+name: Generate Documentation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Doxygen
+        uses: mattnotmitt/doxygen-action@v1
+        with:
+          doxyfile-path: ./Doxyfile
+
+      - name: Generate Documentation
+        run: doxygen Doxyfile
+
+      - name: Commit and Push Documentation
+        run: |
+          git config --global user.name "j1zzu"
+          git config --global user.email "j1zzu8@gmail.com"
+          git add docs/
+          git commit -m "Обновление сгенерированной документации" || echo "Нет изменений для коммита"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
