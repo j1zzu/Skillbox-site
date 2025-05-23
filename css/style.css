@@ -1,3 +1,9 @@
+/**
+ * @file styles.css
+ * @brief Main stylesheet for the website.
+ * @author j1zzu
+ * @date 23-05-2025
+ */
 @font-face {
   font-family: 'Graphik LCG';
   src: url('../fonts/GraphikLCG-Medium.woff2') format('woff2'),
@@ -38,6 +44,10 @@
   box-sizing: border-box;
 }
 
+/**
+ * @defgroup BodyStyles Body Styling
+ * @brief Styles applied to the body element.
+ */
 body {
   margin: 0;
   font-family: 'Gilroy', sans-serif;

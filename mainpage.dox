@@ -1,0 +1,24 @@
+/*! \mainpage Skillbox Website
+
+\section intro_sec Введение
+
+Добро пожаловать в документацию сайта **Skillbox**.
+Этот проект представляет собой простой HTML-документ с ссылками на курсы, загрузку документов и подробную информацию.
+
+\section structure_sec Структура
+
+- `index.html` — главная страница сайта.
+- `style.css` — стили оформления.
+- `2.7_Skillbox_Layout.docx` — файл для загрузки.
+- `program.html` — подробности курса.
+
+\section author_sec Автор
+
+- Автор: jizzu
+- Дата: 2025-05-23
+
+\section links_sec Полезные ссылки
+
+- [Skillbox](https://skillbox.ru)
+
+*/

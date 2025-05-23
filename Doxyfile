@@ -1,0 +1,11 @@
+PROJECT_NAME           = "Skillbox-site" # Название проекта
+OUTPUT_DIRECTORY       = docs # Папка для вывода документации
+GENERATE_HTML          = YES # Включить генерацию HTML (по умолчанию YES)
+GENERATE_LATEX         = NO  # Отключить LaTeX.
+INPUT                  = . # Папка с исходниками
+FILE_PATTERNS          = *.dox  # Обрабатывать только HTML и CSS файлы.
+RECURSIVE              = YES  # Рекурсивно обрабатывать директории
+HAVE_DOT               = YES # Включить схемы в HTML
+INCLUDE_GRAPH          = YES  # Включить диаграммы в HTML
+HTML_OUTPUT            = html  # Включить HTML-вывод
+EXTENSION_MAPPING      = html=HTML # Распознавать .html как HTML-файлы
